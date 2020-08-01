@@ -1,0 +1,38 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cloud_work
+  name: cloud_work
+  namespace: cn202002
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud_work
+  template:
+    metadata:
+      labels:
+        app: prometheus-test-demo
+    spec:
+      containers:
+      - image: harbor.edu.cn/cn202002/cloud_work:{VERSION}
+        name: cloud_work
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cloud_work
+  labels:
+    app: cloud_work
+spec:
+  type: NodePort
+  selector:
+    app: cloud_work
+  ports:
+  - name: tcp
+    protocol: TCP
+    port: 8998
+    targetPort: 8998
+    nodePort: 30001

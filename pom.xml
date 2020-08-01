@@ -38,7 +38,7 @@
     </dependencies>
 
     <build>
-        <finalName>cloud</finalName>
+        <finalName>cloud-work</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
