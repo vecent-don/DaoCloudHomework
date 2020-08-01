@@ -3,33 +3,33 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: cloud_work
-  name: cloud_work
+    app: cloud-work
+  name: cloud-work
   namespace: cn202002
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cloud_work
+      app: cloud-work
   template:
     metadata:
       labels:
-        app: prometheus-test-demo
+        app: cloud-work
     spec:
       containers:
       - image: harbor.edu.cn/cn202002/cloud_work:{VERSION}
-        name: cloud_work
+        name: cloud-work
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: cloud_work
+  name: cloud-work
   labels:
-    app: cloud_work
+    app: cloud-work
 spec:
   type: NodePort
   selector:
-    app: cloud_work
+    app: cloud-work
   ports:
   - name: tcp
     protocol: TCP
