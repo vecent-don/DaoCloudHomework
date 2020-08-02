@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' >/etc/timezone
 
-EXPOSE 8997
+EXPOSE 9090
 
 ENV JAVA_OPTS ''
 
