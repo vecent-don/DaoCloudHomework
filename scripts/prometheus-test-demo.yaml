@@ -17,8 +17,8 @@ spec:
         app: cloud-work
     spec:
       imagePullSecrets:
-        - name: cn202002
-        - password: cn202002
+        - name: regcred
+
       containers:
       - image: harbor.edu.cn/cn202002/cloud_work:{VERSION}
         name: cloud-work
