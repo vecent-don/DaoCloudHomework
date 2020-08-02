@@ -2,8 +2,8 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    k8s-app: prometheus-test-demo
-  name: prometheus-test-demo
+    k8s-app: cloud-work
+  name: cloud-work
   namespace: monitoring
 spec:
   endpoints:
@@ -13,7 +13,7 @@ spec:
     scheme: 'http'
   selector:
     matchLabels:
-      app: prometheus-test-demo
+      app: cloud-work
   namespaceSelector:
     matchNames:
-    - default
+    - cn202002
