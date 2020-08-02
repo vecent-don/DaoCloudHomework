@@ -13,12 +13,11 @@ spec:
       app: cloud-work
   template:
     metadata:
-      metadata:
-        annotations:
-          prometheus.io/path: /actuator/prometheus
-          prometheus.io/port: "9090"
-          prometheus.io/scheme: http
-          prometheus.io/scrape: "true"
+      annotations:
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "9090"
+        prometheus.io/scheme: http
+        prometheus.io/scrape: "true"
       labels:
         app: cloud-work
 
