@@ -38,4 +38,4 @@ spec:
     protocol: TCP
     port: 8998
     targetPort: 8998
-    nodePort: 30001
+    nodePort: 30003
