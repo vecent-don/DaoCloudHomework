@@ -15,6 +15,7 @@ spec:
     metadata:
       labels:
         app: cloud-work
+
     spec:
       containers:
       - image: harbor.edu.cn/cn202002/cloud_work:{VERSION}
@@ -28,6 +29,8 @@ metadata:
   name: cloud-work
   labels:
     app: cloud-work
+    name: cloud-work
+    namespace: cn202002
 spec:
   type: NodePort
   selector:
