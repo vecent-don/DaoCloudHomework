@@ -9,7 +9,7 @@ spec:
   endpoints:
   - interval: 30s
     port: tcp
-    path: /actuator/prometheus
+    path: /msg
     scheme: 'http'
   selector:
     matchLabels:
