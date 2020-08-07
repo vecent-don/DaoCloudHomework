@@ -2,9 +2,9 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    k8s-app: cloud-work-monitor
-  name: cloud-work-monitor
-  namespace: cn202002
+    k8s-app: cloud-work-monitor2
+  name: cloud-work-monitor2
+  namespace: default
 spec:
   endpoints:
   - interval: 30s
