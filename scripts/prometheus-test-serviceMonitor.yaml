@@ -2,7 +2,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    k8s-app: cloud-work
+    k8s-app: cloud-work-monitor
   name: cloud-work
   namespace: monitoring
 spec:
