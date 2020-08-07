@@ -20,7 +20,6 @@ spec:
         prometheus.io/scrape: "true"
       labels:
         app: cloud-work
-
     spec:
       containers:
       - image: harbor.edu.cn/cn202002/cloud_work:{VERSION}
