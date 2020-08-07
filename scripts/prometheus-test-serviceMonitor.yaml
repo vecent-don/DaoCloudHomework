@@ -3,8 +3,8 @@ kind: ServiceMonitor
 metadata:
   labels:
     k8s-app: cloud-work-monitor
-  name: cloud-work
-  namespace: monitoring
+  name: cloud-work-monitor
+  namespace: cn202002
 spec:
   endpoints:
   - interval: 30s
@@ -17,3 +17,5 @@ spec:
   namespaceSelector:
     matchNames:
     - cn202002
+
+
