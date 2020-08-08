@@ -1,6 +1,6 @@
 *** Settings ***
 
-Library     HttpLibrary
+Library     HttpLibrary.HTTP
 
 
 
