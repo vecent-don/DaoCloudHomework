@@ -57,7 +57,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis
-  namespace: cn202004
+  namespace: cn202002
   labels:
     app: redis
 spec:
