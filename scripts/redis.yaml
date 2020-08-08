@@ -94,7 +94,7 @@ metadata:
   labels:
     app: redis
   name: redis
-  namespace: cn202004
+  namespace: cn202002
 spec:
   ports:
   - name: tcp
