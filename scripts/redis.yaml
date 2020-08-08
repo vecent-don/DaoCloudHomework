@@ -98,7 +98,7 @@ metadata:
 spec:
   ports:
   - name: tcp
-    nodePort: 30011
+    nodePort: 30013
     port: 6379
     protocol: TCP
     targetPort: 6379
