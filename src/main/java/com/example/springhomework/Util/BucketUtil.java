@@ -5,7 +5,7 @@ import java.util.Objects;
 
 public class BucketUtil {
     //默认容量10
-    static final int DEFAULT_MAX_COUNT = 100;
+    static final int DEFAULT_MAX_COUNT = 10;
     // 默认增长速率为1
     static final int DEFAULT_CREATE_RATE = 1;
     // 使用HashMap存放令牌桶，这里默认为10个令牌桶
